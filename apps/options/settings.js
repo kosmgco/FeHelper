@@ -13,40 +13,19 @@ module.exports = (() => {
     let optionItems = [
         'opt_item_contextMenus',
         'JSON_PAGE_FORMAT',
-        'EN_DECODE',
         'CODE_BEAUTIFY',
         'CODE_COMPRESS',
         'JSON_FORMAT',
         'JSON_COMPARE',
-        'QR_CODE',
-        'COLOR_PICKER',
-        'REGEXP_TOOL',
-        'TIME_STAMP',
-        'IMAGE_BASE64',
         'FCP_HELPER_DETECT',
-        'SHOW_PAGE_LOAD_TIME',
-        'AJAX_DEBUGGER',
         'JS_CSS_PAGE_BEAUTIFY',
-        'HTML_TO_MARKDOWN',
-        'PAGE_CAPTURE',
-        'RANDOM_PASSWORD',
         'FORBID_OPEN_IN_NEW_TAB',
         'MAX_JSON_KEYS_NUMBER',
         'AUTO_TEXT_DECODE',
-        'STICKY_NOTES',
-        'GRID_RULER',
-        'REMOVE_BG',
-        'MULTI_TOOLKIT',
-        'PAGE_MODIFIER',
-        'POST_MAN'
     ];
 
     // 默认处理关闭状态的功能，除非用户手动打开
     let offDefaultList = [
-        'GRID_RULER',
-        'MENU_GRID_RULER',
-        'REMOVE_BG',
-        'MENU_REMOVE_BG'
     ];
 
     // 邮件菜单配置项
@@ -54,30 +33,6 @@ module.exports = (() => {
         MENU_PAGE_ENCODING: {
             icon: '↺',
             text: '网页编码设置'
-        },
-        MENU_QRCODE_CREATE: {
-            icon: '▣',
-            text: '二维码生成器',
-            contexts: ['page', 'selection', 'editable', 'link', 'image']
-        },
-        MENU_QRCODE_DECODE: {
-            icon: '◈',
-            text: '二维码解码器',
-            contexts: ['image']
-        },
-        MENU_PAGE_CAPTURE: {
-            icon: '✂',
-            text: '页面滚动截屏'
-        },
-        MENU_COLOR_PICKER: {
-            icon: '☀',
-            text: '页面取色工具',
-            contexts: ['page', 'selection', 'editable']
-        },
-        MENU_IMAGE_BASE64: {
-            icon: '⇄',
-            text: '图片与base64',
-            contexts: ['image']
         },
         MENU_STR_ENDECODE: {
             icon: '♨',
@@ -101,58 +56,6 @@ module.exports = (() => {
         MENU_CODE_COMPRESS: {
             icon: '〓',
             text: '代码压缩工具'
-        },
-        MENU_AJAX_DEBUGGER: {
-            icon: '▶',
-            text: 'Ajax调试功能'
-        },
-        MENU_POST_MAN: {
-            icon:'☯',
-            text: '简易Postman'
-        },
-        MENU_PAGE_OPTIMI: {
-            icon: '√',
-            text: '页面性能检测'
-        },
-        MENU_TIME_STAMP: {
-            icon: '♖',
-            text: '时间(戳)转换'
-        },
-        MENU_RANDOM_PASS: {
-            icon: '☽',
-            text: '随机密码生成'
-        },
-        MENU_JS_REGEXP: {
-            icon: '✙',
-            text: 'JS正则表达式'
-        },
-        MENU_MARKDOWN_TL: {
-            icon: 'ⓜ',
-            text: 'markown工具'
-        },
-        MENU_CODE_STANDARD: {
-            icon: '☊',
-            text: '编码规范检测'
-        },
-        MENU_STICKY_NOTE: {
-            icon: '▤',
-            text: '我的便签笔记'
-        },
-        MENU_GRID_RULER: {
-            icon: '✚',
-            text: '页面栅格标尺'
-        },
-        MENU_MULTI_TOOLKIT: {
-            icon: '❖',
-            text: '多维小工具集'
-        },
-        MENU_REMOVE_BG: {
-            icon: '⚘',
-            text: '人像背景移除'
-        },
-        MENU_PAGE_MODIFIER: {
-            icon: '☃',
-            text: '网页油猴工具'
         },
         MENU_DOWNLOAD_CRX: {
             icon:'↬',

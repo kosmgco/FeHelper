@@ -127,16 +127,6 @@
     },
     {
       "matches": [
-        "https://www.remove.bg/"
-      ],
-      "js": [
-        "remove-bg/content.js"
-      ],
-      "run_at": "document_end",
-      "all_frames": true
-    },
-    {
-      "matches": [
         "http://*/*",
         "https://*/*"
       ],
@@ -148,6 +138,5 @@
     }
   ],
   "content_security_policy": "style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-eval'; object-src 'self' ; media-src 'self' filesystem:",
-  "update_url": "https://clients2.google.com/service/update2/crx",
   "homepage_url": "https://www.baidufe.com/fehelper"
 }

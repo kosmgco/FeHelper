@@ -7,7 +7,7 @@ var BgPageInstance = (function () {
     let MSG_TYPE = Tarp.require('../static/js/msg_type');
     let Settings = Tarp.require('../options/settings');
     let Network = Tarp.require('../background/network');
-    let PageCapture = Tarp.require('../page-capture/capture-api')(MSG_TYPE);
+//     let PageCapture = Tarp.require('../page-capture/capture-api')(MSG_TYPE);
 
     let feHelper = {
         codeStandardMgr: {},
@@ -266,9 +266,9 @@ var BgPageInstance = (function () {
                         _doFcpDetect(tab);
                         break;
                     //将当前网页转为图片
-                    case MSG_TYPE.PAGE_CAPTURE:
-                        PageCapture.full(tab);
-                        break;
+                    // case MSG_TYPE.PAGE_CAPTURE:
+                    //     PageCapture.full(tab);
+                    //     break;
                     //查看网页加载时间
                     case MSG_TYPE.SHOW_PAGE_LOAD_TIME:
                         _getPageWpoInfo();
@@ -421,9 +421,9 @@ var BgPageInstance = (function () {
                         _qrDecode(info, tab);
                     },
 
-                    MENU_PAGE_CAPTURE: function (info, tab) {
-                        PageCapture.full(tab);
-                    },
+                    // MENU_PAGE_CAPTURE: function (info, tab) {
+                    //     PageCapture.full(tab);
+                    // },
                     MENU_COLOR_PICKER: function (info, tab) {
                         _showColorPicker();
                     },
@@ -1078,7 +1078,7 @@ var BgPageInstance = (function () {
         notify: notifyText,
         showColorPicker: _showColorPicker,
         tellMeAjaxDbgSwitch: _tellDevToolsDbgSwitchOn,
-        getCapturedData: PageCapture.getCapturedData,
+        // getCapturedData: PageCapture.getCapturedData,
         openUrl: _openUrl
     };
 })();
